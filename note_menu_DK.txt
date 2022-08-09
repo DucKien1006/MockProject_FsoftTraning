@@ -1,0 +1,47 @@
+---------Main menu:
+1. Customer menu:
+- add new customer
+- modify customer infor by id
+- display all customer (by day)\
+- display all customer (by status done/not yet)
+2. Product menu:
+- add new product
+- modify product's infor by product id
+- display all product 
+- display all product in stock(còn hàng tồn)
+- display all product sold out(hết hàng)
+- add discount by product id
+3. Order menu:
+- add new product into a order by order id
+- add new order by new customer id
+- modify number of product in a order by order id
+- display all order by day
+**********
+---------Function:
+- hàm tính DELIVERY_FEE: 
+	+ vs mỗi quận thì sẽ khác nhau
+	+ nếu có 1 địa chỉ mới thì p thêm địa chỉ đó vào database 
+và tính fee cho tỉnh đó
+	+ POSTAL_CODE
+- hàm tính tổng tiền order cho mỗi khách hàng:
+	+ tổng tiền = tiền mỗi sản phẩm * số sản phẩm * discount 
++ DELIVERY_FEE
+
+***********
+-------Validate
+1. validate customer id
+2. validate order id
+3. validate product id
+4. validate customer email
+5. validate create date of product(< now)
+6. validate phone number (vd: 0(+9) or +84(9))
+7. validate 
+
+*********SQL
+database : 'MOCKPROJECT'
+username: 'sa'
+password: '123456'
+
+# toàn bộ code sql viết hoa tên biến tên bảng
+# varchar(30)  or varchar(50)
+- các id đều identify(1,1) trừ bảng address(address id = )   ????? address chỉ hà nội hay cả các tỉnh khác nữa?
